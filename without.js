@@ -27,8 +27,8 @@ const without = function(source, itemsToRemove) {
   return filterdArray;
 }
 
-console.log(without([1, 2, 3, 4, 2], [1, 2]))
-console.log(without([1, 2, 3], [1])); // => [2, 3]
-console.log(without(["1", "2", "3"], [1, 2, "3"])); // => ["1", "2"]
-console.log(without([1, 2, 3], []));
-console.log(without([], [1, 2]));
+assertArraysEqual((without([1, 2, 3, 4, 2], [1, 2])), [3, 4])
+assertArraysEqual((without([1, 2, 3], [1])), [2, 3]); // => [2, 3]
+assertArraysEqual((without(["1", "2", "3"], [1, 2, "3"])), ["1", "2"]); // => ["1", "2"]
+assertArraysEqual((without([1, 2, 3], [])), [1, 2, 3]);
+assertArraysEqual((without([], [1, 2])), []);
