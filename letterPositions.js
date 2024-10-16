@@ -15,6 +15,7 @@ const letterPositions = function(sentence) {
   const results = {};
 
   for (let i = 0; i < sentence.length; i++) {
+    // can use trim to remove white space
     if (sentence[i] !== " ") {
       if (results[sentence[i]]) {
         results[sentence[i]].push(i);
@@ -30,3 +31,4 @@ let result = letterPositions("lighthouse in the house");
 assertArraysEqual(result.l, [0])
 assertArraysEqual(result.h, [3 , 5, 15, 18])
 assertArraysEqual(result.e, [9, 16, 22])
+assertArraysEqual(letterPositions(" "), {})
