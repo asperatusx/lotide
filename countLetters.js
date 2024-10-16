@@ -17,7 +17,8 @@ const countLetters = function(string) {
   return result;
 }
 
-assertEqual(countLetters("lighthouse in the house").l, 1);
-assertEqual(countLetters("lighthouse in the house").i, 2);
-assertEqual(countLetters("lighthouse in the house").e, 3);
-assertEqual(countLetters("lighthouse in the house")[" "], undefined);
+let results = countLetters("lighthouse in the house");
+assertEqual(results.l, 1);
+assertEqual(results.i, 2);
+assertEqual(results.e, 3);
+assertEqual(results[" "], undefined);
