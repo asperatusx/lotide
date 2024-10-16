@@ -13,7 +13,6 @@ const countLetters = function(string) {
       else result[letter] = 1
     }
   }
-  console.log(result)
   return result;
 }
 
