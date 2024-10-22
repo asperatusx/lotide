@@ -34,3 +34,5 @@ assertArraysEqual(results2, [ "I've", 'been', 'to', 'Hollywood' ])
 const data3 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
 const results3 = takeUntil(data3, x => x === 1);
 assertArraysEqual(results3, [])
+
+module.exports = takeUntil;

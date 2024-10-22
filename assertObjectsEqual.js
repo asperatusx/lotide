@@ -26,3 +26,5 @@ const assertObjectsEqual = function (actual, expected) {
 
 assertObjectsEqual({shirt: 'blue', pants: 'blue'}, {shirt: 'blue', pants: 'blue'});
 assertObjectsEqual({shirt: 'blue', pants: 'blue'}, {shirt: 'blue', pants: 'purple'});
+
+module.exports = assertObjectsEqual;
